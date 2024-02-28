@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Darko Golovic</h1>
+      <nav>
+        <a href="index.html">Pocetna</a>
+        <a href="form.html">Forma</a>
+      </nav>
+    </header>
+    <main>
+      <form action="">
+        <label for="ime">Ime: </label>
+        <input
+          id="ime"
+          type="text"
+          placeholder="Unesi svoje ime"
+          required
+          autocomplete="off"
+        />
+        <br />
+
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          placeholder="Unesi svoj email"
+          id="email"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <label for="broj">Broj telefona: </label>
+        <input
+          type="number"
+          placeholder="Unesi broj telefona"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <label for="poruka">Poruka: </label><br />
+        <textarea name="s" id="poruka" cols="30" rows="10"></textarea><br />
+        <button type="submit">Posalji</button>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright &copy; by Darko</p>
+    </footer>
+  </body>
+</html>
