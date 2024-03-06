@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(240, 238, 233);
+  color: rgba(0, 0, 0, 0.808);
+  height: 100vh;
+}
+.container {
+  width: 75%;
+  position: relative;
+  overflow: auto;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+h1 {
+  text-align: center;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.time {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.time time {
+  background-color: rgb(198, 196, 196);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+article {
+  column-count: 3;
+  column-rule: 3px solid black;
+  column-gap: 30px;
+}
+blockquote {
+  column-span: all;
+  font-size: 25px;
+  padding: 20px 60px;
+  font-weight: bold;
+}
+blockquote::before,
+blockquote::after {
+  content: "\201C";
+  font-size: 1 rem;
+  color: #555;
+}
+
+blockquote::after {
+  content: "\201D";
+}
+
+h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+p {
+  font-size: 15px;
+  column-fill: auto;
+  margin-bottom: 8px;
+}
+.author {
+  margin-bottom: 8px;
+}
+h3 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+ul {
+  margin-bottom: 15px;
+  margin-left: 30px;
+  list-style: none;
+}
+ul li::before {
+  content: "\2615"; /* Unicode karakter za soljicu kafe */
+  display: inline-block;
+  width: 1em; /* Opciono prilagodite veličinu ikone */
+  margin-right: 0.5em; /* Opcioni razmak između ikone i teksta */
+}
+
+p:last-child {
+  float: right; /* ili float: right; */
+  width: 50%;
+}
+
+figure {
+  position: absolute;
+  bottom: 50px;
+  right: 140px;
+  transform: translateX(-50%);
+}
+img {
+  width: 150px;
+  filter: grayscale(100%);
+}
+figcaption {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 900;
+}
