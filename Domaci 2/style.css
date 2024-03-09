@@ -67,7 +67,7 @@ h2 {
   margin-bottom: 8px;
 }
 p {
-  font-size: 15px;
+  font-size: 16px;
   column-fill: auto;
   margin-bottom: 8px;
 }
@@ -86,27 +86,22 @@ ul {
   list-style: none;
 }
 ul li::before {
-  content: "\2615"; /* Unicode karakter za soljicu kafe */
+  content: "\2615";
   display: inline-block;
-  width: 1em; /* Opciono prilagodite veličinu ikone */
-  margin-right: 0.5em; /* Opcioni razmak između ikone i teksta */
-}
-
-p:last-child {
-  float: right; /* ili float: right; */
-  width: 50%;
+  width: 1em;
+  margin-right: 0.5em;
 }
 
 figure {
-  position: absolute;
-  bottom: 50px;
-  right: 140px;
-  transform: translateX(-50%);
+  float: left;
+  margin-right: 5px;
+  margin-top: 10px;
 }
 img {
-  width: 150px;
+  width: 100%;
   filter: grayscale(100%);
 }
+
 figcaption {
   text-align: center;
   font-size: 12px;
