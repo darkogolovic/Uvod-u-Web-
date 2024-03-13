@@ -18,7 +18,7 @@
     <div class="container">
       <header>
         <nav class="nav global-padding">
-          <img src="Images/logo.png" alt="logo" />
+          <img alt="logo" src="./images/logo.png" />
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="./about.html">About</a></li>
@@ -46,7 +46,7 @@
         </p>
       </section>
 
-      <section class="card-wrapper">
+      <section class="card-wrapper global-padding">
         <div class="blog-card">
           <img src="./images/portrait1.webp" alt="Post 1 Image" />
           <div class="card-content">
@@ -62,7 +62,11 @@
           <div class="card-content">
             <h2>Post Title 2</h2>
             <span>February 20, 2024</span>
-            <p>Description of the second blog post.</p>
+            <p class="text">
+              Description of the second blog post. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Exercitationem soluta possimus eius,
+              quo maxime magnam.
+            </p>
             <a href="#">Read More >></a>
           </div>
         </div>
@@ -78,10 +82,23 @@
         </div>
       </section>
 
-      <footer class="footer global-padding">
-        <div>
-          <img src="Images/logo.png" alt="" />
-          <div class="follow-us">
+      <footer class="footer">
+        <div class="global-padding">
+          <div class="footer-col footer-logo">
+            <img alt="camera-logo" src="./images/logo.png" />
+            <p>
+              Our photography blog is powered by a dedicated team of passionate
+              photographers, talented writers, and tech enthusiasts - discover
+              more about us at our "About Us" section.
+            </p>
+          </div>
+          <div class="footer-col">
+            <p>Links:</p>
+            <a href="/">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
             <p>Follow us:</p>
             <div>
               <i class="fa-brands fa-facebook"></i>
@@ -90,8 +107,9 @@
             </div>
           </div>
         </div>
-
-        <p>&copy; 2024 Photography Blog. All rights reserved.</p>
+        <p class="global-padding">
+          &copy; 2024 Photography Blog. All rights reserved.
+        </p>
       </footer>
     </div>
   </body>
