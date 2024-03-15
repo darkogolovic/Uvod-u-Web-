@@ -62,7 +62,7 @@
   font-size: 2rem;
 }
 .field {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -72,21 +72,19 @@
 .contact-form {
   background-color: rgb(236, 236, 221);
   padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 .contact-form p {
   text-align: center;
 }
 .contact-form form {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
+  width: 90%;
+  max-width: 500px;
 }
-.field {
-  display: flex;
-  justify-content: center;
-}
+
 input[placeholder="Unesite vase ime"],
 input[placeholder="Unesite vas e-mail"],
 textarea {
@@ -95,11 +93,13 @@ textarea {
   border: none;
   background: transparent;
   border-bottom: 1px solid gray;
+  flex-basis: 68%;
 }
 .field label {
   font-size: 1.4rem;
   font-weight: 400;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-basis: 28%;
 }
 input[type="submit"] {
   width: 15%;
