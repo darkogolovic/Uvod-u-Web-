@@ -6,13 +6,23 @@
 .global-padding {
   padding: 10px 100px;
 }
+body {
+  color: #472f1d;
+}
 
 .container .nav {
-  background-color: hsl(0, 0%, 81%);
+  border-bottom: 1px solid #472f1d;
+  background-color: #472f1d7c;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.bars {
+  display: none;
+}
+.fa-bars {
+  font-size: 50px;
 }
 
 .container .nav img {
@@ -37,7 +47,7 @@
 .container .nav ul li a {
   text-decoration: none;
   padding: 4px 8px;
-  color: #191919;
+  color: #472f1d;
   display: block;
   text-align: center;
 
@@ -121,7 +131,7 @@ input[type="submit"]:hover {
   padding-top: 20px;
 }
 
-.footer div {
+.footer .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -170,4 +180,28 @@ input[type="submit"]:hover {
 .footer i {
   font-size: 1.5rem;
   color: #18503c;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer-col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bars {
+    display: block;
+  }
+  .container .nav ul {
+    display: none;
+  }
 }
