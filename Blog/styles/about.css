@@ -105,6 +105,9 @@ main {
   background-color: #472f1d7c;
   flex-direction: row-reverse;
 }
+.section:nth-child(2) .description {
+  align-items: flex-start;
+}
 .section:nth-child(2) button:hover {
   background-color: #472f1d;
   color: #a2a2a2;
