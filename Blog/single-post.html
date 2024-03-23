@@ -3,40 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photography Blog</title>
+    <title>Photografy Blog</title>
+    <link rel="stylesheet" href="./styles/single-post.css" />
   </head>
-
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div>
-      <img src="./images/portrait1.webp" alt="portrait" />
-      <h1>This is my first blog post</h1>
-      <span>02.03.2024.</span>
-      <p>More about my first blog post</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sunt
-        officiis, nostrum delectus quas excepturi velit dicta ea labore, amet
-        nam, qui mollitia? Delectus eligendi ducimus maiores, illo ullam
-        reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Sapiente omnis nemo quaerat quisquam inventore iste neque cum
-        cupiditate, ad temporibus non assumenda, amet quae accusamus veniam
-        quibusdam aut ex laboriosam! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Temporibus et asperiores repellendus facilis, ducimus,
-        pariatur aspernatur quos ut esse facere aliquam nam assumenda fugiat
-        quidem porro odit tempora amet accusantium.
-      </p>
+    <div class="container">
+      <header>
+        <nav class="nav padding-nav">
+          <img alt="logo" src="./images/logo-brown.png" />
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./contact.html">Sign in</a></li>
+            <li><a href="./contact.html">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <figure>
+          <img src="./Images/portrait.jpg" alt="" />
+          <figcaption>Author: John Doe</figcaption>
+        </figure>
+        <div class="blog-post">
+          <h2>Blog post title</h2>
+          <p class="published">Published on March 22, 2024</p>
+          <p class="post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            tempora. Veniam adipisci, aspernatur omnis reiciendis exercitationem
+            fugit natus voluptates cumque dolores vitae iste, sunt sint tenetur
+            esse! Est modi consectetur ducimus iusto reprehenderit maxime, minus
+            nulla facilis voluptate tenetur officiis sunt temporibus quos ea
+            vero repudiandae quas? Et ullam nesciunt, error placeat excepturi
+            ut, culpa dignissimos exercitationem tempore sunt maxime sit ab vero
+            porro quasi atque aliquam quos voluptas dolorum? Non ipsam
+            excepturi, doloremque distinctio debitis pariatur sapiente ipsa
+            reiciendis eveniet, laborum aspernatur porro deserunt nemo labore
+            neque exercitationem suscipit eum temporibus veniam alias!
+            Asperiores amet dolor modi quaerat aperiam! Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Rem architecto nam quas, vero
+            impedit maiores consequatur culpa fuga expedita numquam consequuntur
+            vel nisi praesentium deserunt sed iusto itaque animi, voluptatum
+            maxime ipsum labore? Cumque voluptate tenetur reprehenderit nesciunt
+            optio fugit excepturi incidunt dignissimos hic magnam. Minus cumque
+            dicta magnam soluta. Aut, quis incidunt aspernatur accusamus ipsum
+            assumenda? Reiciendis voluptatibus totam nemo blanditiis ad deserunt
+            alias distinctio enim optio! Fuga optio enim inventore dolores,
+            quisquam autem accusamus quae voluptate iusto temporibus? Quisquam
+            fugit illum accusantium! Atque vero eos, iste optio architecto nemo
+            dicta itaque quibusdam eligendi maiores nobis mollitia porro
+            inventore voluptate distinctio minus laboriosam quam placeat vitae
+            error illum ratione. Delectus numquam, vitae dicta temporibus
+            provident beatae incidunt fugit accusantium unde quas, consequuntur,
+            iste officiis alias aut ipsum repudiandae voluptas officia optio ea
+            saepe. Debitis, pariatur. At eos natus totam in consequatur culpa
+            dolorum mollitia consectetur ab nisi provident fugit laboriosam
+            odio, laborum saepe aliquid maiores quam cumque cupiditate expedita
+            atque. Illo, hic! Sit dolores mollitia blanditiis excepturi
+            provident?
+          </p>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="flex-row padding-footer">
+          <div class="footer-col footer-logo">
+            <img alt="camera-logo" src="./images/logo.png" />
+            <p>
+              Our photography blog is powered by a dedicated team of passionate
+              photographers, talented writers, and tech enthusiasts - discover
+              more about us at our "About Us" section.
+            </p>
+          </div>
+          <div class="footer-col">
+            <p>Links:</p>
+            <a href="/">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <p>Follow us:</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; 2024 Photography Blog. All rights reserved.
+        </p>
+      </footer>
     </div>
-    <footer>
-      <span>This is footer example</span>
-      <p>© 2024 Photography Blog. All rights reserved.</p>
-    </footer>
   </body>
 </html>

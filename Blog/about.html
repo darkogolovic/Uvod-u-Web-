@@ -4,20 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photografy Blog</title>
+    <link rel="stylesheet" href="./styles/about.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <footer>
-      <p>This is footer</p>
-    </footer>
+    <div class="container">
+      <header>
+        <nav class="nav padding-nav">
+          <img alt="logo" src="./images/logo-brown.png" />
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./contact.html">Sign in</a></li>
+            <li><a href="./contact.html">Register</a></li>
+          </ul>
+        </nav>
+      <main>
+        <section class="section">
+          <div class="slika"><img src="./Images/photo-2.jpg" alt="Who are we?"></div>
+          <div class="description">
+            <h3>Who are we?</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+               Id accusantium quidem, ea laboriosam enim a iusto debitis
+                in aliquid nesciunt optio dolore cupiditate illum 
+                recusandae temporibus totam natus accusamus! Numquam!
+              </p>
+              <a href=""><button>Contact us</button></a>
+          </div>
+        </section>
+        <section class="section">
+          <div class="slika"><img src="./Images/photographer.jpeg" alt="Who are we?"></div>
+          <div class="description">
+            <h3>Who are we?</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+               Id accusantium quidem, ea laboriosam enim a iusto debitis
+                in aliquid nesciunt optio dolore cupiditate illum 
+                recusandae temporibus totam natus accusamus! Numquam!
+              </p>
+              <a href=""><button>Contact us</button></a>
+          </div>
+        </section>
+        <section class="section">
+          
+          
+            <h3 class="meet-heading">Meet our team</h3>
+            <div class="features">
+              <div class="feature">
+                <div class="feature-image"><img src="./Images/profile.png" alt=""></div>
+                <h4>Kate</h4>
+                <h5>Co-founder</h5>
+                <p class="mail">kate@example.com</p>
+
+              </div>
+              <div class="feature">
+                <div class="feature-image"><img src="./Images/profile.png" alt=""></div>
+                <h4>Kate</h4>
+                <h5>Co-founder</h5>
+                <p class="mail">kate@example.com</p>
+
+              </div>
+              <div class="feature">
+                <div class="feature-image"><img src="./Images/profile.png" alt=""></div>
+                <h4>Kate</h4>
+                <h5>Co-founder</h5>
+                <p class="mail">kate@example.com</p>
+
+              </div>
+              
+            </div>
+          
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="flex-row padding-footer">
+          <div class="footer-col footer-logo">
+            <img alt="camera-logo" src="./images/logo.png" />
+            <p>
+              Our photography blog is powered by a dedicated team of passionate
+              photographers, talented writers, and tech enthusiasts - discover
+              more about us at our "About Us" section.
+            </p>
+          </div>
+          <div class="footer-col">
+            <p>Links:</p>
+            <a href="/">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <p>Follow us:</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; 2024 Photography Blog. All rights reserved.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
