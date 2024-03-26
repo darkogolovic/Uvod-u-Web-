@@ -71,9 +71,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 .sign-in-form {
-  width: 30%;
+  width: 80%;
+  max-width: 500px;
   background-color: rgba(255, 255, 255, 0.51);
   padding: 24px 12px;
   display: flex;
@@ -162,4 +164,36 @@ form input[type="button"] {
 
 .footer .copyright {
   padding: 18px 10%;
+}
+
+@media only screen and (max-width: 700px) {
+  .container .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .footer .footer-col {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .container .nav ul li {
+    margin: 0;
+    padding: 0;
+  }
 }
