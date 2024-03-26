@@ -93,13 +93,18 @@ main {
 .description p {
   text-align: justify;
 }
-.description a button {
+.description button {
   background-color: #472f1d7c;
   color: #472f1d;
   border: none;
   border-radius: 15px;
-
-  padding: 5px;
+  padding: 10px 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.description button:hover {
+  background-color: #472f1d;
+  color: #a2a2a2;
 }
 .section:nth-child(2) {
   background-color: #472f1d7c;
@@ -107,6 +112,10 @@ main {
 }
 .section:nth-child(2) .description {
   align-items: flex-start;
+}
+.section:nth-child(2) a button {
+  background-color: transparent;
+  border: 1px solid #472f1d;
 }
 .section:nth-child(2) button:hover {
   background-color: #472f1d;
