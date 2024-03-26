@@ -75,70 +75,69 @@ body {
   width: 100%;
   padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 8px;
 }
 .contact-form {
-  background-color: rgb(236, 236, 221);
-  padding-top: 30px;
+  padding: 36px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
 .contact-form p {
+  width: 85%;
   text-align: center;
+  font-size: 18px;
 }
 .contact-form form {
-  width: 90%;
+  width: 85%;
   max-width: 500px;
 }
 
-input[placeholder="Unesite vase ime"],
-input[placeholder="Unesite vas e-mail"],
+input,
 textarea {
   font-size: 20px;
   padding: 5px;
-  border: none;
-  background: transparent;
-  border-bottom: 1px solid gray;
-  flex-basis: 68%;
+  border: 1px solid #472f1d;
+  width: 100%;
+  border-radius: 12px;
 }
-.field label {
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  flex-basis: 28%;
-}
+
 input[type="submit"] {
-  width: 15%;
-  background-color: #18503c;
   padding: 10px;
-  border-radius: 10px;
+  background-color: #472f1d7c;
   border: none;
-  color: white;
+  color: #472f1d;
 }
 input[type="submit"]:hover {
-  background-color: transparent;
-  color: #18503c;
+  background-color: #472f1d;
+  color: #a992817c;
 }
 #message {
   resize: none;
 }
-.footer {
-  background-color: rgb(236, 236, 221);
-  padding-top: 20px;
+/* Footer area */
+
+.padding-footer {
+  padding: 16px 10%;
 }
 
-.footer .flex {
+.footer {
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
+
+.footer div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.footer > p {
+.copyright {
   text-align: center;
   font-size: 14px;
   color: #a2a2a2;
@@ -146,16 +145,10 @@ input[type="submit"]:hover {
   margin: 0;
   background-color: #f2f2f2;
 }
-.footer p:nth-child(2) {
-  background-color: rgb(236, 236, 221);
-}
 
 .footer .footer-logo {
   width: 50%;
   font-size: 14px;
-}
-.footer p:not(.global-padding) {
-  margin-bottom: 20px;
 }
 
 .footer .footer-col {
@@ -165,43 +158,50 @@ input[type="submit"]:hover {
   align-items: flex-start;
 }
 
+.footer .footer-col p {
+  margin-bottom: 16px;
+}
+
 .footer .footer-col i {
   margin-right: 8px;
-  cursor: pointer;
 }
 
 .footer .footer-logo img {
   width: 120px;
 }
-.footer a {
-  text-decoration: none;
-  color: #18503c;
-}
-.footer i {
-  font-size: 1.5rem;
-  color: #18503c;
+
+.footer .copyright {
+  padding: 18px 10%;
 }
 
 @media only screen and (max-width: 700px) {
-  .footer .flex {
-    display: flex;
+  .container .nav {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-  }
-  .footer .footer-col {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     gap: 10px;
   }
-}
-@media only screen and (max-width: 600px) {
-  .bars {
-    display: block;
+
+  .footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
   }
+  .footer .footer-col {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 550px) {
   .container .nav ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .container .nav ul li {
+    margin: 0;
+    padding: 0;
   }
 }
