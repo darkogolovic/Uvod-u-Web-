@@ -134,20 +134,19 @@ const ucenici = [
 ucenici.forEach((ucenik) => {
   ucenik.izracunajProsjek = function () {
     let sumaOcjena = 0;
-    for (const [key, value] of Object.entries(ucenik.ocjene)) {
+    for (const [key, value] of Object.entries(this.ocjene)) {
       sumaOcjena += value;
     }
 
     let prosjek = sumaOcjena / Object.keys(this.ocjene).length;
-    return (ucenik.prosjek = prosjek);
+    ucenik.prosjek = prosjek;
+    return ucenik.prosjek;
   };
 
-  ucenik.uspjeh = uspjeh(ucenik.izracunajProsjek(), this.pol);
-  console.log(
-    `${ucenik.ime} ${ucenik.prezime} je ${uspjeh(ucenik.prosjek, ucenik.pol)}`
-  );
+  ucenik.uspjeh = uspjeh(ucenik.izracunajProsjek(), ucenik.pol);
+  console.log(`${ucenik.ime} ${ucenik.prezime} je ${ucenik.uspjeh}`);
 });
-console.log(ucenici);
+
 function uspjeh(prosjek, pol) {
   if (prosjek >= 4.5) {
     if (pol === "muski") {
