@@ -142,10 +142,12 @@ ucenici.forEach((ucenik) => {
     return (ucenik.prosjek = prosjek);
   };
 
-  ucenik.izracunajProsjek();
-  ucenik.uspjeh = uspjeh(this.prosjek, this.pol);
-  console.log(`${ucenik.ime} ${ucenik.prezime} je ${uspjeh(ucenik.prosjek)}`);
+  ucenik.uspjeh = uspjeh(ucenik.izracunajProsjek(), this.pol);
+  console.log(
+    `${ucenik.ime} ${ucenik.prezime} je ${uspjeh(ucenik.prosjek, ucenik.pol)}`
+  );
 });
+console.log(ucenici);
 function uspjeh(prosjek, pol) {
   if (prosjek > 4) {
     if (pol === "muski") {
