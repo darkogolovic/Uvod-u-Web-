@@ -149,13 +149,13 @@ ucenici.forEach((ucenik) => {
 });
 console.log(ucenici);
 function uspjeh(prosjek, pol) {
-  if (prosjek > 4) {
+  if (prosjek >= 4.5) {
     if (pol === "muski") {
       return "Odlican";
     } else {
       return "Odlicna";
     }
-  } else if (prosjek <= 4 && prosjek >= 3.5) {
+  } else if (prosjek < 4.5 && prosjek >= 3.5) {
     if (pol === "muski") {
       return "Vrlodobar";
     } else {
@@ -191,9 +191,9 @@ function statistikaUspjeha(niz) {
     nedovoljan: 0,
   };
   niz.forEach((ucenik) => {
-    ucenik.prosjek > 4 && ucenik.prosjek <= 5
+    ucenik.prosjek >= 4.5 && ucenik.prosjek <= 5
       ? noviObjekat.odlican++
-      : ucenik.prosjek <= 4 && ucenik.prosjek >= 3.5
+      : ucenik.prosjek < 4.5 && ucenik.prosjek >= 3.5
       ? noviObjekat.vrlodobar++
       : ucenik.prosjek < 3.5 && ucenik.prosjek > 2.5
       ? noviObjekat.dobar++
